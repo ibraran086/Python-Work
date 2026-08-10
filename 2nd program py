@@ -1,0 +1,80 @@
+#lists and tuples
+#lists in python
+list=[84,64.9,89.4,"ibrar"]
+print(len(list))
+print(list[1:3])
+print(list[-3:-1])
+list[3]='SOMI'
+print(list)
+#list method
+list=[2,7,4]
+print(list.append(4))
+print(list)
+print(list.sort())
+print(list.sort(reverse=True))
+print(list)
+#reverse method
+list=["umair,ibrar,uzair"]
+print(list.append("hadi"))
+print(list.append("ahad"))
+print(list.append("areesha"))
+print(list)
+print(list.sort())
+print(list)
+print(list.sort(reverse=True))
+print(list)
+print(list.reverse())
+print(list)
+#insert method
+list=[4,25,44,]
+list.insert(1,100)
+print(list)
+#list remove
+list=[123,334,564,7688]
+list.remove(123)
+print(list)
+#pop method
+list=[2434,3424,456456,]
+list.pop(2)
+print(list)
+#tuple method
+tup=(1,)
+print(type(tup))
+#tupple slice
+a=(1,2,3,4,6,7,95,54,234)
+print(a[0:4])
+print(a[:-1])
+print(len(a))
+#tupple method
+#index
+tup=(4,7,9,3)
+print(tup.index(4))
+print(tup.count(3))
+#WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
+movie=[]
+mov1=input("enter the movie:")
+mov2=input("enter the movie:")
+mov3=input("enter the movie:")
+movie.append(mov1)
+movie.append(mov2)
+movie.append(mov3)
+print(movie)
+#WAP to check if a list contain a palindrome of elements.(hint:use copy()method).
+#[1,2,3,2,1]
+list=[1,2,3,2,1]
+list1=list.copy()
+list1.reverse()
+if(list==list1):
+    print("palindrome")
+else:
+    print("not palimdrome")
+#WAP to check if a list contain a palindrome of elements.(hint:use copy()method).
+#[1,"abc","abc,1"]
+list=[1,"abc","abc",1]
+list2=list.copy()
+list.reverse()
+if(list==list2):
+    print("palindrome")
+else:
+    print("not palimdrome")
+    

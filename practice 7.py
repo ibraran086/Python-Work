@@ -91,13 +91,61 @@
 
 # with open("practice.txt","r") as f:
 #     print(f.read())
-with open("file","r") as f:
-    print(f.read())
-f.close()
+# with open("file","r") as f:
+#     print(f.read())
+# f.close()
 
-f=open("file","w")
-f.write("my name is ibrar.\ni am 26 years old.")
+# f=open("file","w")
+# f.write("my name is ibrar.\ni am 26 years old.")
 
 
-import os
-os.remove("file")
+# import os
+# os.remove("file")
+with open("practice.txt","w") as f:
+    f.write("Hi everyone\nwe are learning file I/O\nusing java.\ni like programming in java.")
+with open("practice.txt","r") as f:
+    data=f.read()
+    data2=data.replace("java","python")
+    print(data2)
+with open("practice.txt","w") as f:
+    f.write(data2)
+word="learning"
+with open("practice.txt","r") as f:
+    data=f.read()
+    if(word in data):
+        print("finding")
+    else:
+        print("not finding")
+def check():
+    word="learninga"
+    data=True
+    line_no=1
+    with open("practice.txt","r") as f:
+        while data:
+            data=f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no+=1
+    return -1
+print(check())
+
+with open("data","r") as f:
+    data=f.read()
+    print(data)
+    num=""
+    for i in range(len(data)):
+        if(data[i]==","):
+            print(int(num))
+            num=""
+        else:
+            num+=data[i]
+count=0
+with open("data","r") as f:
+    data2=f.read()
+    print(data2)
+    num=data2.split(",")
+    for val in num:
+        if(int(val)%2==0):
+            count+=1
+print(count)

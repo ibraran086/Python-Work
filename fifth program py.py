@@ -457,4 +457,3 @@ cities=["sahiwal","faisalabad","lahore"]
 #     fun(list,idx+1)
 # fun(cities)
 
-"my name is ibrar"

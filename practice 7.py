@@ -89,5 +89,15 @@
 #     return -1
 # check()
 
-with open("practice.txt","r") as f:
+# with open("practice.txt","r") as f:
+#     print(f.read())
+with open("file","r") as f:
     print(f.read())
+f.close()
+
+f=open("file","w")
+f.write("my name is ibrar.\ni am 26 years old.")
+
+
+import os
+os.remove("file")

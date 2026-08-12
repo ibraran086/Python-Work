@@ -1,4 +1,0 @@
-with open("file","w") as f:
-    "i am ibrar"
-
-"i am pythan developer"

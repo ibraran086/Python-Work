@@ -159,3 +159,18 @@ with open("data","r") as f:
         if(int(val)%2==0):
             count+=1
 print(count)
+
+def check_word():
+    word="learningx"
+    data=True
+    line_no=1
+    with open("practice.txt","r") as f:
+        while data:
+            data=f.readline()
+            if(word in data):
+                return line_no
+            line_no+=1
+    return -1
+print(check_word())
+
+

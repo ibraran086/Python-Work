@@ -94,3 +94,44 @@ class House:
 home=House("4EA","2EA","1EA","1EA")
 print("rooms:",home.room,",washrooms:",home.washroom,",garage:",home.garage,",TV_Launge:",home.TV_launge)
 
+class Bank:
+    bank_name="United Bank"
+    def __init__(self,employees,manager_name,accountant_name,sweeper):
+        self.employees=employees
+        self.manager_name=manager_name
+        self.accountant_name=accountant_name
+        self.sweeper=sweeper
+bank=Bank(3,"UMAIR","IBRAR","ABDUL GANI")
+print(Bank.bank_name,bank.employees,bank.manager_name,bank.accountant_name,bank.sweeper)
+
+class Blueprint():
+    company="BMW"
+    def __init__(self,feature1,feature2,feature3):
+        self.feature1=feature1
+        self.feature2=feature2
+        self.feature3=feature3
+    def car(self):
+        battery=100
+        if(battery==100):
+            print("battery full")
+            print("you can drive your car.")
+        else:
+            print("waiting for full charging.")
+car1=Blueprint("electric","fully automatic","remote control")
+print(car1.company,car1.feature1,car1.feature2,car1.feature3)
+car1.car()
+
+
+class Student:
+    collage_name="Govt collage"
+    def __init__(self,name,phy,chem,math):
+        self.name=name
+        self.phy=phy
+        self.chem=chem
+        self.math=math
+    def average(self):
+        average=(self.phy+self.chem+self.math)/3
+        return average
+s1=Student("hadi",99,98,97)
+print(s1.collage_name,s1.name,s1.phy,s1.chem,s1.math)
+print(s1.average())

@@ -79,3 +79,18 @@ result=Result(24,14,10)
 print(result.total)
 print(result.pas)
 print(result.fail)
+ 
+class Home:
+    marlas=3
+home=Home()
+print(home.marlas)
+
+class House:
+    def __init__(self,rooms,washrooms,garage,TV_launge):
+        self.room=rooms
+        self.washroom=washrooms
+        self.garage=garage
+        self.TV_launge=TV_launge
+home=House("4EA","2EA","1EA","1EA")
+print("rooms:",home.room,",washrooms:",home.washroom,",garage:",home.garage,",TV_Launge:",home.TV_launge)
+

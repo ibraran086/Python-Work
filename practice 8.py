@@ -152,12 +152,51 @@ class Student:
     def __init__(self,name,marks):
         self.name=name
         self.marks=marks
-        
+    @staticmethod
+    def hello():
+        print(s1.name)
     def average(self):
         sum=0
         for avg in self.marks:
             sum+=avg
-        print("your average score is:",(sum)/3,"%")
+        print("hi your average score is:",(sum)/3,"%")
 s1=Student("Ahad",[99,98,97])
 print(Student.name,s1.name,s1.marks)
 s1.average()
+s1.name="AREESHA NOOR"
+s1.marks=[99,99,98]
+print(s1.name)
+s1.average()
+s1.hello()
+
+class Car:
+    def __init__(self):
+        self.acc=False
+        self.brk=False
+        self.clutch=False
+    def start(self):
+        self.acc=True
+        self.clutch=True
+        print("car start...")
+car1=Car()
+car1.start()
+
+class Account:
+    @staticmethod
+    def name():
+        print("UBL")
+    def __init__(self,balance,account_no):
+        self.balance=balance
+        self.account_no=account_no
+    def debit(self,amount):
+        self.balance-=amount
+        print(amount)
+    def credit(self,remain):
+        self.balance+=remain
+        print(remain)
+    def get_balance(self):
+        return self.balance
+user=Account(50000,292238505)
+user.debit(10000)
+user.credit(20000)
+print(user.get_balance())

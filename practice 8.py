@@ -135,3 +135,29 @@ class Student:
 s1=Student("hadi",99,98,97)
 print(s1.collage_name,s1.name,s1.phy,s1.chem,s1.math)
 print(s1.average())
+
+class School:
+    name="ummul_qura"
+    def __init__(self,name,clas,roll_no,grade):
+        self.name=name
+        self.clas=clas
+        self.roll_no=roll_no
+        self.grade=grade
+student1=School("hadi","play_group","1","A+")
+print(School.name,student1.name,student1.clas,student1.roll_no,student1.grade)
+
+
+class Student:
+    name="GS School"
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+        
+    def average(self):
+        sum=0
+        for avg in self.marks:
+            sum+=avg
+        print("your average score is:",(sum)/3,"%")
+s1=Student("Ahad",[99,98,97])
+print(Student.name,s1.name,s1.marks)
+s1.average()

@@ -200,3 +200,66 @@ user=Account(50000,292238505)
 user.debit(10000)
 user.credit(20000)
 print(user.get_balance())
+
+
+class Car:
+    name="mercedies"
+car1=Car()
+print(car1.name)
+
+class Home:
+    home_name="Munir Home"
+    def __init__(self,bedrooms,bathes,kitchens):
+        self.bedrooms=bedrooms
+        self.bathes=bathes
+        self.kitchens=kitchens
+home=Home("3EA","4EA","2EA")
+print(Home.home_name,"DEAR MUNIR,your home plan is ready",home.bedrooms,home.bathes,home.kitchens)
+
+class Student:
+    collage_name="GOVT COLLAGE"
+    @staticmethod
+    def grade():
+        print("Dear",s1.name,"your grade is A+")
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def average(self):
+        avg=0
+        for val in self.marks:
+            avg+=val
+        print("dear student:",s1.name,"your avg score is:",avg/3)
+s1=Student("Ibrar",[99,98,97])
+print(s1.collage_name,s1.name,s1.marks)
+s1.average()
+s1.grade()
+
+class Motor:
+    def __init__(self):
+        self.button=False
+    def fun(self):
+        self.button=True
+        print("motor ON")
+motor1=Motor()
+motor1.fun()
+
+class Account:
+    @staticmethod
+    def bank():
+        print("MEEZAN BANK")
+    def __init__(self,balance,account_no):
+        self.balance=balance
+        self.account_no=account_no
+    def debit(self,amount):
+        self.balance-=amount
+        print(self.account_no,"Amount has been debit in your account:",self.balance)
+    def credit(self,amount):
+        self.balance+=amount
+        print(self.account_no,"Amount has been credit in your account:",self.balance)
+    def get_balance(self):
+        return self.balance
+user=Account(42000,292238505)
+user.credit(10000)
+user.debit(20000)
+user.credit(10000)
+print(user.get_balance())

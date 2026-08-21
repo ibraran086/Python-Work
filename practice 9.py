@@ -16,5 +16,6 @@ class Car:
 car1=Car("AUDI","SILVER")
 print(car1.name)
 print(car1.colour)
-del car1.colour
+#del car1.colour
+car1.colour="Black"
 print(car1.colour)
